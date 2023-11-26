@@ -1,36 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Patel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ecf4d6;
+        color: #265073;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-        }
+      header {
+        background-color: #2d9596;
+        color: #ecf4d6;
+        padding: 1rem;
+        text-align: center;
+        height: auto;
+      }
 
-        h1 {
-            margin: 0;
-        }
+      header img {
+        border-radius: 50%;
+        max-width: 150px;
+        margin-bottom: 10px;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ecf4d6;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #265073;
+      }
+
+      p {
+        color: #265073;
+      }
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .project {
+        width: 48%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #265073;
+        border-radius: 8px;
+        background-color: #ecf4d6;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .project:hover {
+        transform: scale(1.05);
+      }
+
+      .project img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .project h3 {
+        margin-bottom: 10px;
+        color: #2d9596;
+      }
+
+      .github-logo {
+        width: 24px;
+        margin-right: 5px;
+      }
+
+      footer {
+        background-color: #2d9596;
+        color: #ecf4d6;
+        text-align: center;
+        padding: 1rem;
+        /* margin-top: 40px;  */
+        position: inherit;
+        bottom: 0;
+        width: 100%;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Yash Patel Here</h1>
+      <img src="prof.png" alt="Your Profile Picture" />
+      <h1>Yash Patel</h1>
+      <p>Student</p>
     </header>
 
-    <!-- Your content goes here -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Yash Patel, a third-year B.E./B.Tech student in Computer Science at
+        GEC Gandhinagar, with a strong passion for exploring cutting-edge
+        technologies and continuous learning.
+      </p>
+      <h3>Contact Details</h3>
+      <p>
+        Mobile Number: +91 98984 23524<br /><br />
+        Email:
+        <a href="mailto:yashpatel78156@gmail.com">yashpatel78156@gmail.com</a
+        ><br /><br />
+        LinkedIn:
+        <a href="https://linkedin.com/in/yash-patel-139b06213" target="_blank"
+          >linkedin.com/in/yash-patel-139b06213</a
+        ><br /><br />
+        GitHub:
+        <a href="https://github.com/yashP39" target="_blank"
+          >github.com/yashP39</a
+        >
+      </p>
+    </section>
 
-</body>
+    <section id="education">
+      <h2>Education</h2>
+      <img src="edu.png" alt="Education Screenshot" />
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <p>
+        Mother tongue: Gujarati <br /><br />
+        Other Known : English, Hindi
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>
+        Web Development<br />
+        Frontend Development (HTML, CSS, JS)<br />
+        Backend Development (Python - Flask, Django; PHP - MySQL)<br />
+        App Development (iOS - Swift, Android - XML/JAVA)
+      </p>
+    </section>
+
+    <section id="coding-languages">
+      <h2>Coding Languages</h2>
+      <p>Python, Swift, Java, Android, PL/SQL, HTML, CSS, C++, C</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project: Black-Oak [iOS app]</h3>
+          <p>An ecommerce application for furniture.</p>
+          <a href="https://github.com/yash3915/black-oak" target="_blank">
+            <img
+              class="github-logo"
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt="GitHub Repository"
+            />
+            View on GitHub
+          </a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Yash Patel. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
